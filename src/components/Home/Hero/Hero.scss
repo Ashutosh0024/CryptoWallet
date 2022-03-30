@@ -1,0 +1,107 @@
+.Hero {
+    height: 10px;
+    background:radial-gradient(39.31% 97.64% at 50% 50%, #fffffffa 0%, #ffffff 100%);
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        height: 620px;
+    }
+}
+
+.Tiara {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 1200px) {
+        width: 80%;
+    }
+}
+
+.HeroText {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+}
+
+.LeftContent {
+    h1 {
+        font-size: 70px;
+        color: #fff;
+
+        @media (max-width: 1200px) {
+            font-size: 50px;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        color: #b4b4b4;
+
+        @media (max-width: 1200px) {
+            // max-width: 240px;
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        width: 70%;
+        text-align: center;
+    }
+}
+
+.Hero-Buttons {
+    button {
+        padding: 12px 20px;
+        border-radius: 5px;
+        border: none;
+        font-size: 18px;
+        margin-top: 30px;
+        cursor: pointer;
+        outline: none;
+    }
+    .primary {
+        background-color: #1672c7;
+        color: #ffffff;
+
+        &:hover {
+            background-color: #1566b1;
+        }
+    }
+
+    .secondary {
+        background-color: #ffffff;
+        color: #222222;
+        margin-left: 15px;
+
+        &:hover {
+            background-color: #efefef;
+        }
+
+        @media (max-width: 480px) {
+            margin-left: 0px;
+            margin-top: 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.Coins {
+    @media (max-width: 480px) {
+        width: 70%;
+        margin-top: -20px;
+    }
+}
